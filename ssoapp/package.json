@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "startproxy": "local-ssl-proxy --source 3001 --target 3000"
   },
   "dependencies": {
     "base64-arraybuffer": "^0.2.0",
@@ -17,5 +18,8 @@
     "morgan": "~1.9.1",
     "node-fetch": "^2.6.0",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "local-ssl-proxy": "^1.3.0"
   }
 }
